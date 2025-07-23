@@ -14,7 +14,7 @@ export default function Home() {
         />
         <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
           <li className="mb-2 tracking-[-.01em]">
-            Hello NextJS!!
+            Hello NextJS!!!
           </li>
           <li className="mb-2 tracking-[-.01em]">
             Get started by editing{" "}
