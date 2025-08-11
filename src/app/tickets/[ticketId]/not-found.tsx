@@ -15,7 +15,7 @@ export default function NotFound() {
         }
       />
 
-      <Placeholder label="Ticket not found" />
+      {/* <Placeholder label="Ticket not found" /> */}
     </div>
   );
 }

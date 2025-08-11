@@ -7,13 +7,14 @@ import { getTicket } from '@/features/ticket/queries/get-ticket';
 import { ticketPath, ticketsPath } from '@/paths';
 
 type TicketPageProps = {
-  params: {
+  params: Promise<{
     ticketId: string;
-  };
+  }>;
 };
 
 const TicketPage = async ({ params }: TicketPageProps) => {
-  const ticket = await getTicket(params.ticketId);
+  const { ticketId } = await params;
+  const ticket = await getTicket(ticketId);
 
   if (!ticket) {
     notFound();
