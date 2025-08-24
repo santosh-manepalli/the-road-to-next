@@ -1,10 +1,6 @@
-import Link from 'next/link';
 import { notFound } from 'next/navigation';
-import { Placeholder } from '@/components/placeholder';
-import { TicketItem } from '@/components/ticket-item';
-import { Button } from '@/components/ui/button';
+import { TicketItem } from '@/features/ticket/components/ticket-item';
 import { getTicket } from '@/features/ticket/queries/get-ticket';
-import { ticketPath, ticketsPath } from '@/paths';
 
 type TicketPageProps = {
   params: Promise<{
